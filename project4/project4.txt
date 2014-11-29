@@ -1,0 +1,28 @@
+
+Project #4
+
+Due Dates:  Saturday, November 29 at 11:59pm 
+
+Submit:    eLearning
+
+Late Policy:  -10 points per hour late
+
+Instructions: This is an individual assignment.  All work should be your own.
+
+
+
+Objective:
+
+     Implement a bucket sort procedure.
+
+
+Description:
+
+     80 points
+     1. Using the author's sort code, add a bucket sort method to sort a list of Integers. 
+
+     20 points
+     2. Modify the main method in the author's code to call your bucket sort for random lists of size 100000, 200000, and 1000000, where the values range from 0 to 1000, outputting the time required for each size.  
+     
+Submit to eLearning:
+     Sort.java

@@ -1,0 +1,104 @@
+
+Project #2
+
+Due Dates:  Saturday, October 18 at 11:59pm 
+
+Submit:    eLearning
+
+Late Policy:  -10 points per hour late
+
+Instructions: This is an individual assignment.  All work should be your own.
+
+
+
+Objective:
+
+  Create and work with a tree structure.
+
+Overview:
+
+  A file system contains folders and files.  Each folder may contain subfolders, forming a tree.  Folders may also contain files.  This project will explore the idea of a tree of folders and files by emulating this behavior in software using objects, without creating actual files and folders in the secondary storage.
+
+Details:
+
+  You should build the system so that the file and folder objects form a tree.  The tree should not be a separate tree class that simply contains files and folders.  Rather, the file and folder objects should themselves form the tree.  Therefore you should not use an existing tree, nor try to separate your tree code from the objects.  The goal is to build a custom system.
+
+  You should have at least a file object, a folder object, and a file system object.  You may find it helpful to have an abstract class that the file and folder inherit from, so that you can treat them alike.
+
+  The file system object should let the user create folders and files.  Note that these will not have any relationship to the machine's own file system.  This means that your file object will just contain a string to represent its contents.  Likewise a folder object will know which subfolder and file objects belong to it.
+
+  The folder and file objects will not be public.  They will be managed by the file system object.  The file system object will present a public interface that uses path names and file names as strings.  
+
+  The file system object should let the user perform the following operations:
+
+    create a folder
+    create a file
+    √write to a file
+    √read file contents
+    count of all folders (use recursion, do not store count)
+    count of all files (use recursion, do not store count)
+    list all folders and files indented to show the hierarchy (use recursion)
+    count of characters being stored (use recursion, do not store count)
+
+
+  
+  Include a main method to do the following:
+
+    1. creates this set of folders:
+          projects
+          projects\fall
+          projects\fall\fall14
+          projects\fall\fall14\3340
+          projects\fall\fall14\3345
+          projects\spring
+          projects\spring\sp14
+          projects\spring\sp14\4348
+          projects\spring\sp14\4349
+
+    2. adds these files containing the text shown
+          projects\fall\fall14\3340\homework1.txt  "homework 1"
+          projects\fall\fall14\3340\homework2.txt  "homework 2"
+  
+          projects\fall\fall14\3345\homework1.txt  "homework 1"
+          projects\fall\fall14\3345\homework2.txt  "homework 2"
+
+          projects\spring\sp14\4348\syllabus.txt   "syllabus"
+
+    3. lists all folders and files indented
+
+    4. shows the count of all folders
+
+    5. shows the count of all files
+
+    6. shows the count of characters stored
+
+    7. displays contents of projects\spring\sp10\4348\syllabus.txt
+
+
+  Output should look like this:
+
+    projects
+     fall
+      fall10
+       3340
+        homework1.txt
+        homework2.txt
+       3345
+        homework1.txt
+        homework2.txt
+     spring
+      sp10
+       4348
+        syllabus.txt
+       4349
+
+    Number of folders: 9
+    Number of files: 5
+    Stored 48 chars
+    projects\spring\sp10\4348\syllabus.txt contains: syllabus
+
+
+Submit to eLearning:
+   All your *.java files
+
+
