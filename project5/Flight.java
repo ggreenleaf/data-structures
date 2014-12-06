@@ -12,17 +12,12 @@ public class Flight {
 	=            Methods            =
 	===============================*/
 	
-	public Flight(String src, String dest, Double c) {
+	public Flight(Airport src, Airport dest, Double c) {
 		source = src;
 		destination = dest;
 		cost = c;
 	}
 
 
-	
-	
-	
-	
-	
 	
 }

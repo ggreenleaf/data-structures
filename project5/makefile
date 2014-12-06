@@ -6,8 +6,8 @@ JC = javac
 
 CLASSES = \
 	Airport.java \
-	Flight.java \ 
-	Graph.java
+	Flight.java \
+	Graph.java \
 
 default: classes
 
